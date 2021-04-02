@@ -320,3 +320,4 @@ cv_model = cv.fit(train_df)
 y_pred = cv_model.transform(test_df)
 ac = y_pred.select("label", "prediction")
 ac.filter(ac.label == ac.prediction).count() / ac.count()
+# 0.8612678393627614
